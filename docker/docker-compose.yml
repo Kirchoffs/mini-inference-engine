@@ -1,0 +1,12 @@
+services:
+  cpp-dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: mini-inference-engine-container
+    volumes:
+      - ..:/project
+      - /project/build
+    tty: true
+    stdin_open: true
+    working_dir: /project
