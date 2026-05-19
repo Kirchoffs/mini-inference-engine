@@ -31,3 +31,6 @@ target_link_libraries(verify PRIVATE
     glog::glog
     PkgConfig::SP
 )
+
+enable_testing()
+add_subdirectory(tests)

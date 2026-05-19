@@ -52,3 +52,31 @@
 >> make
 >> ./verify
 ```
+
+## Armadillo
+### Cube
+#### Types
+```
+cube    = Cube<double>
+dcube   = Cube<double>
+fcube   = Cube<float>
+cx_cube = Cube<cx_double>
+```
+
+#### Constructors
+```
+cube(n_rows, n_cols, n_slices)
+```
+
+#### Member Functions
+```
+reshape(n_rows, n_cols, n_slices)
+```
+
+## Miscellaneous
+### Header Inclusion Order
+- Corresponding Header (The file being implemented)
+- C System Headers
+- C++ Standard Library Headers
+- Third-party Library Headers
+- Project-specific / Local Headers

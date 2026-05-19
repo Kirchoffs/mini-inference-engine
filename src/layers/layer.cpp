@@ -1,0 +1,16 @@
+#include "layers/layer.hpp"
+#include <glog/logging.h>
+
+namespace mini_inference_engine {
+
+Layer::Layer(const std::string& layer_name) : layer_name_(layer_name) {
+}
+
+void Layer::Forward(
+    const std::vector<std::shared_ptr<Tensor<float>>>& inputs,
+    std::vector<std::shared_ptr<Tensor<float>>>& outputs
+) {
+    LOG(FATAL) << "The layer " << this->layer_name_ << " not implement yet!";
+}
+
+}
